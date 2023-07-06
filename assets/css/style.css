@@ -1,0 +1,475 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.btn_hover:hover{
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+ */
+
+/* Common */
+.main::before, .container::before, .content::before, .tour_dates::before, .place_list::before,.row::before, .row_padding::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main::after, .container::after, .content::after, .tour_dates::after, .place_list::after, .row::after, .row_padding::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+}
+
+.row_padding{
+    padding: 0 0.8rem;
+}
+
+.row_padding>.col_two{
+    padding: 0 0.8rem;
+}
+
+.col{
+    float: left;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.col_full{
+    width: 100%;
+}
+
+.col_two{
+    width: 50%;
+}
+
+.col_third{
+    width: 33.33333%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    margin-bottom: 1.6rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+.input{
+    display: block;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.border{
+    border: 0.08rem solid #ccc !important;
+}
+
+.text_up{
+    text-transform: uppercase !important;
+}
+
+.text_xlarge{
+    font-size: 2.4rem;
+}
+
+.text_medium{
+    font-size: 1.5rem !important;
+}
+
+.text_center{
+    text-align: center !important;
+}
+
+.section{
+    margin-top: 1.6rem !important;
+    margin-bottom: 1.6rem !important;
+}
+
+.pull_right{
+    float: right !important;
+}
+
+.pull_left{
+    float: left !important;
+}
+
+.opacity{
+    opacity: 0.6 !important;
+}
+
+.opacity_hover:hover{
+    opacity: 0.6;
+}
+
+.light_grey{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.padding_64{
+    padding-top: 6.4rem !important;
+    padding-bottom: 6.4rem !important;
+}
+
+.a_none{
+    text-decoration: none;
+    color: #000;
+}
+/* End Common */
+
+ /* Main */
+.main{
+    /* position: relative; */
+}
+
+/* Header */
+header.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 4.5rem; 
+    background-color: #000;
+    justify-content: space-between;
+}
+
+/* Navigation */
+nav.navigation{
+    width: 100%;
+    height: 100%; 
+    font-weight: 400;
+}
+
+nav.navigation > li{display: inline-block; position: relative; cursor: pointer;}
+
+/* nav.navigation li:hover{background-color: #ccc;} */
+
+a.list_item{
+    padding: 1.2rem 2.4rem;
+    font-size: 1.5rem;
+    line-height: 300%;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav.navigation li:hover a.list_item{color: #000;}
+
+nav.navigation li:last-child:hover ul.sub_nav{display: block;}
+
+nav.navigation li:last-child ul.sub_nav{
+    display: none;
+    position: absolute;
+    min-width: 16rem;
+    height: 250%;
+    background-color: #fff;
+}
+
+nav.navigation ul.sub_nav li{display: block; height: 33.33%;}
+
+nav.navigation ul.sub_nav li a{
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: #000;
+    text-decoration: none;
+}
+/* End Navigation */
+
+/* Search */
+header.header > .search{
+    display: flex;
+    align-items: center;
+}
+
+header.header input.ip_search{
+    /* display: none; */
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    line-height: 2.5rem;
+    /* border-width: 0; */
+    /* border-style: none; */
+}
+
+header.header input.ip_search:focus-visible{
+    outline: none;
+}
+
+header.header button.btn_search:hover input.ip_search{
+}
+
+header.header button.btn_search,
+header.header button.btn_menu{
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+}
+
+header.header button.btn_search:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+header.header > .btn_menu_mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* End Search */
+
+/* End Header */
+
+/* Slider */
+.slider{
+    position: relative;
+    margin-top: 4.5rem;
+    padding-top: 50%;
+    background: url('../img/slider1.jpg') top center / cover no-repeat;
+    box-sizing: border-box;
+}
+
+.slider .text_content{
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-100%);
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+}
+
+.slider .text_heading{
+    margin: 1rem 0;
+    font-size: 2.7rem;
+    font-weight: 400;
+    text-shadow: 0 0 1px #000;
+}
+
+.slider .text_description{
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-shadow: 0 0 1px #000;
+}
+
+/* End Slider */
+
+/* Container */
+/* General Class */
+/* End General Class */
+.container{
+    /* height: 100px; */
+}
+
+.container section.content{
+    width: 80rem;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 6.4rem 1.6rem;
+}
+
+.container h1.content_heading{
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.container p.content_sub_heading{
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+/* Section 1 */
+.container p.about_text{
+    margin: 1.5rem 0;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.container .member_list{
+    display: flex;
+    padding: 3.2rem 0;
+    box-sizing: inherit;
+}
+.container .member_item{
+    width: 33.33333%;
+    text-align: center;
+}
+.container .member_name{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+.container .member_image{
+    width: 60%;
+    margin-bottom: 1.6rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0.5rem;
+}
+/* End Section 1 */
+
+/* Section 2 */
+.container .tour_dates{
+    background-color: #000;
+}
+
+.container .tour_dates h1.content_heading, .container .tour_dates p.content_sub_heading{
+    color: #fff;
+}
+
+.tour_dates ul.ticket_list{
+    background-color: #fff;
+    border: 0.05rem solid #ccc;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.tour_dates li.ticket_item{
+    padding: 0.9rem 1.6rem;
+    border-bottom: 0.1rem solid #ddd;
+
+    color: #757575;
+}
+
+.tour_dates span.sold_out{
+    margin-left: 1.6rem;
+    color: #fff;
+    background-color: #f44336;
+    padding: 0.1rem 0.8rem;
+}
+
+.tour_dates span.quantity{
+    float: right;
+    margin-right: 1.6rem; 
+    padding: 0 0.8rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.tour_dates .place_list{
+    display: flex;
+    padding: 3.2rem 0.8rem;
+    margin: 0 -1.6rem;
+}
+
+.tour_dates .place_item{
+    width: 33.333333%;
+    float: left;
+    padding: 0 0.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.tour_dates img.place_img{
+    width: 100%;
+}
+
+.tour_dates img.place_img:hover{
+    opacity: 0.6;
+}
+
+.tour_dates .place_content{
+    padding: 0.015rem 1.6rem;
+    color: #000 !important;
+    background-color: #fff;
+}
+
+.tour_dates h3.place_heading{
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.tour_dates p.place_time{
+    opacity: 0.6;
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+}
+
+.tour_dates p.place_description{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+/* End Section 2 */
+
+/* Section 3 */
+.contact_note{
+    padding: 3.2rem 0;
+    font-size: 1.8rem;
+}
+
+.contact_detail{
+    margin-bottom: 1.6rem;
+}
+
+p.contact_inf{
+
+}
+
+p.contact_inf>i{
+    width: 3rem;
+}
+
+.contact_fan{
+    font-size: 1.5rem;
+}
+
+.contact_send{
+
+}
+/* End Section 3 */
+/* End Container */
+
+/* Footer */
+footer.footer{
+    min-height: 100px;
+}
+
+p.copyright{
+    margin: 1.5rem 0;
+}
+/* End Footer */

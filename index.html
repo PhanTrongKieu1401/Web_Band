@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="assets/img/icon_title.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+<body>
+    <div class="main">
+        <header id="header" class="header">
+            <nav class="navigation">
+                <li class="btn_hover"><a href="#" class="list_item">HOME</a></li>
+                <li class="btn_hover"><a href="#band" class="list_item">BAND</a></li>
+                <li class="btn_hover"><a href="#tour" class="list_item">TOUR</a></li>
+                <li class="btn_hover"><a href="#contact" class="list_item">CONTACT</a></li>
+                <li class="btn_hover">
+                    <a href="#" class="list_item">
+                        MORE
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="sub_nav">
+                        <li class="btn_hover"><a href="#">Merchandise</a></li>
+                        <li class="btn_hover"><a href="#">Extras</a></li>
+                        <li class="btn_hover"><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </nav>
+            <div class="search">
+                <!-- <input id="ip_search" class="ip_search" type="search" placeholder="Vui lòng nhập bài hát..."> -->
+                <button class="btn_search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="btn_menu_mobile">
+                <button class="btn_menu btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="slider content">
+            <div class="text_content">
+                <h1 class="text_heading">Chicago</h1>
+                <p class="text_description"><b>Thank you, Chicago - A night we won't forget.</b></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <section id="band" class="content">
+                <h1 class="content_heading">The Band</h1>
+                <p class="content_sub_heading"><i>We love music</i></p>
+                <p class="about_text">We have created a fictional band website. 
+                Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est 
+                laborum consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat.</p>
+                <div class="member_list">
+                    <div class="member_item member_item_mobile">
+                        <p class="member_name">Name</p>
+                        <img src="../assets/img/bandmember.jpg" alt="" class="member_image">
+                    </div>
+                    <div class="member_item member_item_mobile">
+                        <p class="member_name">Name</p>
+                        <img src="../assets/img/bandmember.jpg" alt="" class="member_image">
+                    </div>
+                    <div class="member_item member_item_mobile">
+                        <p class="member_name">Name</p>
+                        <img src="../assets/img/bandmember.jpg" alt="" class="member_image">
+                    </div>
+                </div>
+            </section>
+            
+            <div class="tour_dates">
+                <section id="tour" class="content">
+                    <h1 class="content_heading">Tour Dates</h1>
+                    <p class="content_sub_heading"><i>Remember to book your tickets!</i></p>
+                    <br><br>
+                    <ul class="ticket_list">
+                        <li class="ticket_item">
+                            September
+                            <span class="sold_out">Sold out</span>
+                            <!-- <span class="quantity">3</span> -->
+                        </li>
+                        <li class="ticket_item">
+                            October
+                            <span class="sold_out">Sold out</span>
+                            <!-- <span class="quantity">3</span> -->
+                        </li>
+                        <li class="ticket_item">
+                            November
+                            <!-- <span class="sold_out">Sold out</span> -->
+                            <span class="quantity">3</span>
+                        </li>
+                    </ul>
+                    <div class="place_list">
+                        <div class="place_item">
+                            <img src="../assets/img/newyork.jpg" alt="New York" class="place_img">
+                            <div class="place_content">
+                                <h3 class="place_heading">New York</h3>
+                                <p class="place_time">Fri 27 Nov 2016</p>
+                                <p class="place_description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="btn js_buy_ticket s_full_width" onclick="openModal()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place_item">
+                            <img src="../assets/img/paris.jpg" alt="Paris" class="place_img">
+                            <div class="place_content">
+                                <h3 class="place_heading">Paris</h3>
+                                <p class="place_time">Sat 28 Nov 2016</p>
+                                <p class="place_description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="btn js_buy_ticket s_full_width" onclick="openModal()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place_item">
+                            <img src="../assets/img/sanfran.jpg" alt="San Francisco" class="place_img">
+                            <div class="place_content">
+                                <h3 class="place_heading">San Francisco</h3>
+                                <p class="place_time">Sun 29 Nov 2016</p>
+                                <p class="place_description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="btn js_buy_ticket s_full_width" onclick="openModal()">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="contact" class="content">
+                <h1 class="content_heading">CONTACT</h1>
+                <p class="content_sub_heading"><i>Fan? Drop a note!</i></p>
+                <div class="row contact_note">
+                    <div class="col col_two s_col_full contact_detail">
+                        <p class="contact_inf">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Chicago, US
+                        </p>
+                        <p class="contact_inf">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            Phone: <a href="tel:0869336917">0869336917</a>
+                        </p>
+                        <p class="contact_inf">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            Email: <a href="mailto:phantrongkieu1401@gmail.com">phantrongkieu1401@gmail.com</a>
+                        </p>
+                        <br>
+                    </div>
+                    <div class="col col_two s_col_full contact_fan">
+                        <form action="">
+                            <div class="row" style="margin-bottom: 0.8rem;">
+                                <div class="col col_two s_col_full">
+                                    <input type="text" name="contact_name" id="contact_name" class="input border s_mb_8" placeholder="Name" required="required">
+                                </div>
+                                <div class="col col_two s_col_full">
+                                    <input type="email" name="contact_email" id="contact_email" class="input border" placeholder="Email" required="required">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col_full">
+                                    <input type="text" name="contact_message" id="contact_message" class="input border" placeholder="Message" required="required">
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="btn text_up pull_right section s_full_width" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <img src="../assets/img/map.jpg" alt="Vị trí band nhạc" style="width: 100%;">
+            </section>
+        </div>
+
+        <footer class="footer padding_64 opacity text_center light_grey text_xlarge">
+            <div class="socials_list">
+                <a href="" class="a_none">
+                    <i class="fa fa-facebook-square opacity_hover" aria-hidden="true"></i>
+                </a>
+                <a href="" class="a_none">
+                    <i class="fa fa-instagram opacity_hover" aria-hidden="true"></i>
+                </a>
+                <a href="" class="a_none">
+                    <i class="fa fa-snapchat opacity_hover" aria-hidden="true"></i>
+                </a>
+                <a href="" class="a_none">
+                    <i class="fa fa-pinterest-p opacity_hover" aria-hidden="true"></i>
+                </a>
+                <a href="" class="a_none">
+                    <i class="fa fa-twitter opacity_hover" aria-hidden="true"></i>
+                </a>
+                <a href="" class="a_none">
+                    <i class="fa fa-linkedin opacity_hover" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="copyright text_medium">Powered by <a href="" class="a_none" style="text-decoration: solid 1px black underline;">w3.css</a></p>
+        </footer>
+    </div>
+    <div class="modal_ticket">
+        <div class="modal_container">
+            <header class="modal_header">
+                <button class="modal_close btn_hover" onclick="closeModal()">
+                    x
+                </button>
+                <h2 class="modal_header_text">
+                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    Tickets
+                </h2>
+            </header>
+            <div class="modal_body">
+                <label for="ticket_quantity" class="modal_label">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" name="ticket_quantity" id="ticket_quantity" class="modal_input" placeholder="How many?">
+
+                <label for="ticket_email" class="modal_label">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Send to
+                </label>
+                <input type="text" name="ticket_email" id="ticket_email" class="modal_input" placeholder="Enter email">
+                
+                <button id="btn_buy" class="btn_hover">
+                    Pay
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </button>
+            </div>
+            <footer class="modal_footer">
+                <button class="btn_close btn_hover" onclick="closeModal()">
+                    Close
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <p class="modal_help">
+                    Need
+                    <a href="#" class="modal_link_help">help?</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/responsive.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* PC */
+@media (min-width: 1024px) {
+    header.header button.btn_menu_mobile{display: none;}
+}
+
+/* Tablet */
+@media (min-width: 741px) and (max-width:1023px) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width:1023px) {
+    .btn{
+        padding: 1.2rem 1.6rem;
+    }
+
+    .input, .modal_input{
+        padding: 1.6rem !important;
+    }
+
+    .s_mb_8{
+        margin-bottom: 0.8rem;
+    }
+
+    .socials_list{
+        font-size: 3.6rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+    .s_full_width, .s_col_full{
+        width: 100%;
+    }
+
+    header.header{
+        overflow: hidden;
+    }
+
+    nav.navigation > li{
+        display: block; 
+        position: relative; 
+        cursor: pointer;
+    }
+
+    nav.navigation li a{
+        display: block;
+        line-height: 140%;
+    }
+
+    nav.navigation li:last-child ul.sub_nav{
+        position: initial;
+        background-color: #000;
+    }
+
+    nav.navigation ul.sub_nav li{
+        padding: 0.8rem 2.4rem;
+    }
+
+    nav.navigation ul.sub_nav li a{
+        color: #fff;
+    }
+
+    nav.navigation ul.sub_nav li:hover a{
+        color: #000;
+    }
+
+    header.header > .search{
+        display: none;
+    }
+
+    header.header > .btn_menu_mobile{
+        display: block;
+    }
+
+    .container .member_list{
+        display: block;
+    }
+
+    .container .member_item_mobile{
+        width: 100%;
+    }
+
+    .tour_dates .place_list{
+        display: block;
+    }
+
+    .tour_dates .place_item{
+        width: 100%;
+    }
+}

@@ -1,0 +1,122 @@
+.modal_open{
+    display: flex !important;
+}
+
+.modal_ticket{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_container{
+    width: 90rem;
+    max-width: calc(100% - 3.2rem);
+    background-color: #fff;
+    animation: modalFadeIn ease 0.5s;
+}
+
+header.modal_header{
+    position: relative;
+    padding: 3.2rem 1.6rem;
+    background-color: #009688;
+    color: #fff;
+}
+
+button.modal_close{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    right: 0;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    padding: 0.8rem 1.6rem;
+    font-size: 2.4rem;
+}
+
+.modal_header_text{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    margin: 1rem 0;
+}
+
+.modal_body{
+    padding: 0.015rem 1.6rem;
+}
+
+.modal_label{
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.7rem;
+}
+
+.modal_input{
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.08rem solid #ccc;
+    font-size: 1.6rem;
+}
+
+button#btn_buy{
+    display: block;
+    width: 100%;
+    padding: 1.6rem;
+    margin: 1.6rem 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #009688;
+}
+
+footer.modal_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.015rem 1.6rem;
+}
+
+button.btn_close{
+    margin: 1.6rem 0;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    color: #fff;
+    background-color: #f44336;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+p.modal_help{
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    line-height: 100%;
+}
+
+p.modal_help>a{
+    color: #2196F3 ;
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-10rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
